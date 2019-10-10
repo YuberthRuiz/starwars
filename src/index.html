@@ -11,7 +11,7 @@
   <div class="container my-5 text-center">
     <button class="btn btn-danger w-100" onclick="traer()">Obtener</button>
     <div class="mt-5" id="contenido">
-      <p></p>
+
     </div>
   </div>
   <h1> Star Wars App </h1>
@@ -21,8 +21,11 @@
     function traer(){
       fetch('https://swapi.co/api/films/')
         .then(res => res.json())
-        .then( data =>){
-          console.log(data)
+        .then( data =>{
+          console.log(data.results[0].title)
+          contenido.innerHTML = `<img src="../imagenes/aNewHope.jpg" width="100px" height="100px" class="img-fluid rounded-circle"
+            <p>Película:${data.results[0].title}  </p>
+            `
         })
     }
   </script>
