@@ -25,22 +25,22 @@
         <div class="peli1" id="contenido1" >
           <a href="../imagenes/aNewHope.jpg"  data-lightbox="mygallery" data-title="A New Hope">  <img src="../imagenes/aNewHope.jpg" alt=""> </a>
         </div>
-        <div class="peli2">
+        <div class="peli2" id="contenido2">
           <a href="../imagenes/Attack of the Clones.jpg" data-lightbox="mygallery" data-title="Attack of the Clones" > <img src="../imagenes/Attack of the Clones.jpg"     alt=""> </a>
         </div>
-        <div class="peli3">
+        <div class="peli3" id="contenido3">
           <a href="../imagenes/The Phantom Menace.jpg" data-lightbox="mygallery" data-title="The Phantom Menace"> <img src="../imagenes/The Phantom Menace.jpg"       alt=""></a>
         </div>
-        <div class="peli4">
+        <div class="peli4" id="contenido4">
           <a href="../imagenes/Revenge of the Sith.jpg" data-lightbox="mygallery" data-title="Revenge of the Sith">	<img src="../imagenes/Revenge of the Sith.jpg"      alt=""></a>
         </div>
-        <div class="peli5">
+        <div class="peli5" id="contenido5">
           <a href="../imagenes/Return of the Jedi.jpg" data-lightbox="mygallery" data-title="Return of the Jedi"> <img src="../imagenes/Return of the Jedi.jpg"       alt=""></a>
         </div>
-        <div class="peli6">
+        <div class="peli6" id="contenido6">
           <a href="../imagenes/the empire strikes back.jpg" data-lightbox="mygallery" data-title="The Empire Strikes Back">	<img src="../imagenes/the empire strikes back.jpg"  alt=""></a>
         </div>
-        <div class="peli7">
+        <div class="peli7" id="contenido7">
           <a href="../imagenes/The Force Awakens.jpg" data-lightbox="mygallery"> <img src="../imagenes/The Force Awakens.jpg"        alt=""></a>
         </div>
 
@@ -56,6 +56,21 @@
                  <p>Episodio: ${datos.results['0'].episode_id}</p>
                  <p>Resumen: ${datos.results['0'].opening_crawl}</p>
                  <p>Director: ${datos.results['0'].director}</p>
+                  `
+              })
+          }
+
+          var contenido2 = document.querySelector('#contenido2')
+          function traer(){
+            fetch('https://swapi.co/api/films/')
+              .then(res => res.json())
+              .then( datos => {
+                console.log(datos.results['1'].title)
+                contenido1.innerHTML = `
+                 <p>Título: ${datos.results['1'].title}</p>
+                 <p>Episodio: ${datos.results['1'].episode_id}</p>
+                 <p>Resumen: ${datos.results['1'].opening_crawl}</p>
+                 <p>Director: ${datos.results['1'].director}</p>
                   `
               })
           }

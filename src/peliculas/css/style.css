@@ -43,11 +43,3 @@ header nav a {
   filter: grayscale(0);
   transform: scale(1.1);
 }
-
-.contenido1 p{
-  color: black;
-  display: inline;
-  width: 20px;
-  padding: 20px;
-
-}
