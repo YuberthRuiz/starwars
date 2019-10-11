@@ -1,13 +1,36 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Starwars App</title>
+    <title>Starwars app</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+      <script type="text/javascript" src="js/lightbox-plus-jquery.min.js">
+      </script>
   </head>
   <body>
-    <h1> StarWars App </h1>
-    <canvas width="5000" height="5000" id="lienzo">
-    </canvas>
-    <script src="objetos.js"></script>
+    <header>
+        <h1>Starwars app</h1>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="peliculas.html">Peliculas</a>
+          <a href="personajes.html">Personajes</a>
+          <a href="planetas.html">Planetas</a>
+          <a href="especies.html">Especies</a>
+          <a href="naves.html">Naves Espaciales</a>
+          <a href="vehiculos.html">Vehículos</a>
+        </nav>
+    </header>
+    <div class="galeria">
+    <a href="imagenes/aNewHope.jpg" data-lightbox="mygallery" data-title="A New Hope">  <img src="imagenes/aNewHope.jpg" alt=""> </a>
+    <a href="imagenes/Attack of the Clones.jpg" data-lightbox="mygallery" data-title="Attack of the Clones" > <img src="imagenes/Attack of the Clones.jpg"     alt=""> </a>
+    <a href="imagenes/The Phantom Menace.jpg" data-lightbox="mygallery" data-title="The Phantom Menace"> <img src="imagenes/The Phantom Menace.jpg"       alt=""></a>
+    <a href="imagenes/Revenge of the Sith.jpg" data-lightbox="mygallery" data-title="Revenge of the Sith">	<img src="imagenes/Revenge of the Sith.jpg"      alt=""></a>
+    <a href="imagenes/Return of the Jedi.jpg" data-lightbox="mygallery" data-title="Return of the Jedi"> <img src="imagenes/Return of the Jedi.jpg"       alt=""></a>
+    <a href="imagenes/the empire strikes back.jpg" data-lightbox="mygallery" data-title="The Empire Strikes Back">	<img src="imagenes/the empire strikes back.jpg"  alt=""></a>
+    <a href="imagenes/The Force Awakens.jpg" data-lightbox="mygallery"> <img src="imagenes/The Force Awakens.jpg"        alt=""></a>
+
+    </div>
+
   </body>
 </html>
