@@ -1,0 +1,53 @@
+body{
+    font-family: sans-serif;
+    background-image: url("../imagenes/fondoStarWars1.jpg");
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    color:white;
+    margin: 30px 0 50px;
+}
+
+header h1{
+  font-size: 55px;
+  color: white;
+  line-height: 230px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+header nav a {
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.galeria{
+  margin:10px 50px;
+}
+
+.galeria img{
+  display: inline;
+  width: 20px;
+  padding: 20px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.galeria img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.contenido1 p{
+  color: black;
+  display: inline;
+  width: 20px;
+  padding: 20px;
+
+}
